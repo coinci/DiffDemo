@@ -15,6 +15,9 @@ namespace WpfDiffTool
     {
         public void ShowDiffInRichTextBox(string originalString, string targetString, RichTextBox rtbResult)
         {
+            if (rtbResult == null)
+                throw new ArgumentNullException(nameof(rtbResult));
+
             diff_match_patch diffHelper = new diff_match_patch();
             List<Diff> diffs = null;
 
