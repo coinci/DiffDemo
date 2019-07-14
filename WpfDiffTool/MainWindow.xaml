@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfDiffTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDiffTool"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="1">
+            <Button x:Name="btDiff1"  Height="64" Width="120" Click="BtDiff1_Click" >Diff 1 Lab</Button>
+            <Button x:Name="btDiff2"  Height="64" Width="120" Click="BtDiff2_Click" >Diff 2 Lab</Button>
+        </StackPanel>
+        <RichTextBox x:Name="rtbResult" Grid.Column="1" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="612">
+        </RichTextBox>
+    </Grid>
+</Window>
