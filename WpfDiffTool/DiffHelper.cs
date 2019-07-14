@@ -22,6 +22,8 @@ namespace WpfDiffTool
             //string target_2 = "This is something nice," + Environment.NewLine + "Do you want it?";
 
             diffs = diffHelper.diff_main(originalString, targetString);
+
+            // ---kinds of clean up methods
             //diffHelper.diff_cleanupSemanticLossless(diffs);
             diffHelper.diff_cleanupSemantic(diffs);
             // diffHelper.diff_cleanupMerge(diffs);
